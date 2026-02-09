@@ -1,0 +1,108 @@
+/* General body styling */
+body {
+    background-color: #e3eaf1;   /* Soft professional blue-gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2C3E50; /* Dark slate text */
+}
+
+/* Outer form container */
+.outer-box {
+    width: 450px;
+    margin: 50px auto;
+    background-color: #2C3E50;   /* Professional dark blue container */
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Form box text alignment */
+.form-box {
+    text-align: center;
+}
+
+/* Form heading */
+.form-box h2 {
+    margin-bottom: 25px;
+    color: #F5EDE0; /* Light beige heading */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #F5EDE0; /* Light beige text */
+    text-align: left;
+}
+
+/* Input fields (white mandatory) */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #BDC3C7; /* subtle gray border */
+    background-color: #ffffff;  /* white input */
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #D69A6B; /* Soft professional brown focus */
+    box-shadow: 0 0 6px rgba(214,154,107,0.3);
+}
+
+/* Gender and Interest sections - now WHITE */
+.gender-box,
+.interest-box {
+    background-color: #ffffff;  /* White background */
+    color: #2C3E50;             /* Dark text */
+    padding: 12px 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #BDC3C7; /* subtle gray border */
+    text-align: left;
+    font-size: 15px;
+}
+
+/* Buttons */
+button {
+    margin-top: 20px;
+    padding: 10px 45px;
+    background-color: #D69A6B;  /* professional brown */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #B87950;  /* darker brown on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .outer-box {
+        width: 90%;
+        padding: 25px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    .gender-box,
+    .interest-box {
+        width: 100%;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Project Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f6fa; /* Soft light gray background */
+            text-align: center;
+            color: #2C3E50; /* Dark slate for text */
+        }
+        h2 {
+            color: #2C3E50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .table {
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .row {
+            display: flex;
+        }
+        .header, .cell {
+            flex: 1;
+            padding: 14px 18px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        .header {
+            background-color: #34495E; /* Dark professional slate */
+            color: #ECF0F1; /* Soft white text */
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .row:nth-child(odd) .cell {
+            background-color: #ECF0F1; /* Light gray for odd rows */
+        }
+        .row:nth-child(even) .cell {
+            background-color: #FFFFFF; /* White for even rows */
+        }
+        .row:hover .cell {
+            background-color: #D6E0F0; /* Subtle blue-gray on hover */
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Project Details</h2>
+
+    <div class="table">
+        <!-- Header Row -->
+        <div class="row">
+            <div class="header">S.N</div>
+            <div class="header">Project Name</div>
+            <div class="header">Student Name</div>
+            <div class="header">Exam Roll No</div>
+            <div class="header">Remarks</div>
+        </div>
+
+        <!-- Data Rows -->
+        <div class="row">
+            <div class="cell">1</div>
+            <div class="cell">Attendance Management System</div>
+            <div class="cell">Bideet Pratap Singh</div>
+            <div class="cell">80117728</div>
+            <div class="cell">Good</div>
+        </div>
+
+        <div class="row">
+            <div class="cell">2</div>
+            <div class="cell">Online Voting System</div>
+            <div class="cell">Rahul Singh</div>
+            <div class="cell">80117729</div>
+            <div class="cell">Very good</div>
+        </div>
+
+        <div class="row">
+            <div class="cell">3</div>
+            <div class="cell">Hostel Management System</div>
+            <div class="cell">Anish KC</div>
+            <div class="cell">80117730</div>
+            <div class="cell">Good</div>
+        </div>
+
+        <div class="row">
+            <div class="cell">4</div>
+            <div class="cell">Online Shopping System</div>
+            <div class="cell">Ronak Raymajhi</div>
+            <div class="cell">80117731</div>
+            <div class="cell">Very good</div>
+        </div>
+
+        <div class="row">
+            <div class="cell">5</div>
+            <div class="cell">Inventory Management System</div>
+            <div class="cell">Shishir Dhungel</div>
+            <div class="cell">80117732</div>
+            <div class="cell">Good</div>
+        </div>
+    </div>
+</body>
+</html>
